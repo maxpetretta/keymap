@@ -42,9 +42,9 @@ enum layers { BASE, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // #if defined MIRYOKU_ALPHAS_COLEMAK
   [BASE] = LAYOUT_miryoku(
-    KC_Q,              KC_W,              KC_F,              KC_P,              KC_G,              KC_J,              KC_L,              KC_U,              KC_Y,              KC_QUOT,
-    LSFT_T(KC_A),      LCTL_T(KC_R),      LALT_T(KC_S),      LGUI_T(KC_T),      KC_D,              KC_H,              LGUI_T(KC_N),      LALT_T(KC_E),      LCTL_T(KC_I),      LSFT_T(KC_O),
-    KC_Z,              KC_X,              KC_C,              KC_V,              KC_B,              KC_K,              KC_M,              KC_COMM,           KC_DOT,            KC_SLSH,
+    KC_Q,              KC_W,              KC_F,              KC_P,              KC_B,              KC_J,              KC_L,              KC_U,              KC_Y,              KC_QUOT,
+    LSFT_T(KC_A),      LCTL_T(KC_R),      LALT_T(KC_S),      LGUI_T(KC_T),      KC_G,              KC_K,              LGUI_T(KC_N),      LALT_T(KC_E),      LCTL_T(KC_I),      LSFT_T(KC_O),
+    KC_Z,              KC_X,              KC_C,              KC_D,              KC_V,              KC_M,              KC_H,              KC_COMM,           KC_DOT,            KC_SLSH,
     U_NP,              U_NP,              LT(MEDR, KC_ESC),  LT(NAVR, KC_SPC),  LT(MOUR, KC_TAB),  LT(NSSL, KC_ENT),  LT(NSL, KC_BSPC),  LT(FUNL, KC_DEL),  U_NP,              U_NP
   ),
 // #elif defined MIRYOKU_ALPHAS_COLEMAKDHK
