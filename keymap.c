@@ -21,6 +21,7 @@ enum layers { BASE, MEDR, NAVR, MOUR, NSSL, NSL, FUNL };
 #define U_CPY LCMD(KC_C)
 #define U_CUT LCMD(KC_X)
 #define U_UND LCMD(KC_Z)
+#define U_CLP LCTL(LCMD(KC_C))
 // #elif defined MIRYOKU_CLIPBOARD_WIN
 // #define U_RDO C(KC_Y)
 // #define U_PST C(KC_V)
@@ -111,9 +112,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //   ),
 // #else
   [NAVR] = LAYOUT_miryoku(
-    RESET,   U_NA,    U_NA,    U_NA,    U_NA,    U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
-    KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, U_NA,    KC_CAPS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
-    U_UND,   U_CUT,   U_CPY,   U_PST,   U_RDO,   KC_INS,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,
+    RESET,   U_NA,    U_NA,    U_NA,    U_NA,    KC_INS,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,
+    KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, U_CLP,   KC_CAPS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
+    U_UND,   U_CUT,   U_CPY,   U_PST,   U_RDO,   U_NU,    U_NU,    U_NU,    U_NU,    U_NU,
     U_NP,    U_NP,    U_NA,    U_NA,    U_NA,    KC_ENT,  KC_BSPC, KC_DEL,  U_NP,    U_NP
   ),
   [MOUR] = LAYOUT_miryoku(
