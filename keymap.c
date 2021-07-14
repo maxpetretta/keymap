@@ -43,16 +43,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     U_NA,     U_NA,     U_NA,     U_NA,     U_NA, U_NA,   KC_F1,    KC_F2,  KC_F3,  KC_F12,
     U_NP,     U_NP,     U_NA,     U_NA,     U_NA, KC_ENT, KC_BSPC,  KC_DEL, U_NP,   U_NP
   )
-  // [NUMS] = LAYOUT_miryoku(
-  //   RESET,    U_NA,     U_NA,     U_NA,     U_NA, KC_EQL,   KC_7,     KC_8,   KC_9, KC_PLUS,
-  //   KC_LSFT,  KC_LCTL,  KC_LALT,  KC_LGUI,  U_NA, KC_ASTR,  KC_4,     KC_5,   KC_6, KC_MINS,
-  //   U_NA,     U_NA,     U_NA,     U_NA,     U_NA, KC_0,     KC_1,     KC_2,   KC_3, KC_DOT,
-  //   U_NP,     U_NP,     U_NA,     U_NA,     U_NA, KC_ENT,   KC_BSPC,  KC_DEL, U_NP, U_NP
-  // ),
-  // [SYM1] = LAYOUT_miryoku(
-  //   KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  U_NA, U_NA,     U_NA,     U_NA,     RESET,
-  //   KC_SCLN,  KC_COLN,  KC_LCBR,  KC_LPRN,  KC_LBRC,  U_NA, KC_LGUI,  KC_LALT,  KC_LCTL,  KC_LSFT,
-  //   KC_CIRC,  KC_AMPR,  KC_RCBR,  KC_RPRN,  KC_RBRC,  U_NA, U_NA,     U_NA,     U_NA,     U_NA,
-  //   U_NP,     U_NP,     KC_ESC,   KC_SPC,   KC_TAB,   U_NA, U_NA,     U_NA,     U_NP,     U_NP
-  // ),
 };
