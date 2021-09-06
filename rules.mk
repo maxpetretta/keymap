@@ -1,1 +1,4 @@
-EXTRAKEY_ENABLE = yes # Audio control and System control
+# Enable combos and media keys
+VPATH += keyboards/gboards/
+COMBO_ENABLE = yes
+EXTRAKEY_ENABLE = yes
