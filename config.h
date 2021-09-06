@@ -11,7 +11,7 @@
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // Toggle layers with a triple tap
-#define TAPPING_TOGGLE 3
+// #define TAPPING_TOGGLE 3
 
 #define XXX KC_NO
 

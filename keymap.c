@@ -16,10 +16,10 @@ enum layers { BASE, NAVR, NUMP };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ergodox_36(
-    KC_Q,         KC_W,         KC_F,         KC_P,                 KC_B,   KC_J,   KC_L,                  KC_U,         KC_Y,         KC_QUOT,
-    LSFT_T(KC_A), LCTL_T(KC_R), LALT_T(KC_S), LGUI_T(KC_T),         KC_G,   KC_M,   LGUI_T(KC_N),          LALT_T(KC_E), LCTL_T(KC_I), LSFT_T(KC_O),
-    KC_Z,         KC_X,         KC_C,         KC_D,                 KC_V,   KC_K,   KC_H,                  KC_COMM,      KC_DOT,       KC_SLSH,
-    U_NP,         U_NP,         KC_ESC,       LT(TT(NAVR), KC_SPC), KC_TAB, KC_ENT, LT(TT(NUMP), KC_BSPC), KC_DEL,       U_NP,         U_NP
+    KC_Q,         KC_W,         KC_F,         KC_P,             KC_B,   KC_J,   KC_L,              KC_U,         KC_Y,         KC_QUOT,
+    LSFT_T(KC_A), LCTL_T(KC_R), LALT_T(KC_S), LGUI_T(KC_T),     KC_G,   KC_M,   LGUI_T(KC_N),      LALT_T(KC_E), LCTL_T(KC_I), LSFT_T(KC_O),
+    KC_Z,         KC_X,         KC_C,         KC_D,             KC_V,   KC_K,   KC_H,              KC_COMM,      KC_DOT,       KC_SLSH,
+    U_NP,         U_NP,         KC_ESC,       LT(NAVR, KC_SPC), KC_TAB, KC_ENT, LT(NUMP, KC_BSPC), KC_DEL,       U_NP,         U_NP
   ),
   [NAVR] = LAYOUT_ergodox_36(
     LGUI_T(KC_1), LGUI_T(KC_2), LGUI_T(KC_3), LGUI_T(KC_4), LGUI_T(KC_5), KC_CAPS, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
