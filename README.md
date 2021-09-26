@@ -1,7 +1,7 @@
 # 36-key Combo Layout
-A heavily modified keymap for the Alpaca Keyboard's Hotdox, implemented in QMK.
+A combo-infused keymap for the OLKB Planck rev 6, implemented in QMK.
 
-![A picture of a modified Ergodox keymap](./keymap.png)
+![A picture of a split Planck keymap](./keymap.png)
 
 [Link to keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/gists/39d751b9dc2e97a37b8e29fe4aa87cc5)
 
