@@ -10,6 +10,7 @@ enum layers { BASE, NAVR, NUMP };
 #define U_CUT LCMD(KC_X)
 #define U_UND LCMD(KC_Z)
 #define U_CLP LCTL(LCMD(KC_C))
+#define U_SST LSFT(LCMD(KC_4))
 
 #define U_NP KC_NO // Key is not present
 #define U_NA KC_NO // Available but not used
@@ -23,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [NAVR] = LAYOUT_planck_mit(
     LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), LGUI(KC_4), LGUI(KC_5), U_NA, U_NA,  KC_CAPS, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
-    KC_LSFT,    KC_LCTL,    KC_LALT,    KC_LGUI,    U_CLP,      U_NA, U_NA,  U_NA,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
+    KC_LSFT,    KC_LCTL,    KC_LALT,    KC_LGUI,    U_CLP,      U_NA, U_NA,  U_SST,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
     U_UND,      U_CUT,      U_CPY,      U_PST,      U_RDO,      U_NA, U_NA,  KC_MPLY, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT,
     U_NP,       U_NP,       U_NA,       U_NA,       U_NA,           U_NP,    KC_ENT,  KC_BSPC, KC_DEL,  U_NP,    U_NP
   ),
