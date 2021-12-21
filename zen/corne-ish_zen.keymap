@@ -55,7 +55,7 @@
       
       // Left-hand combos
       COMBO(AT_SIGN, 1 2)
-      COMBO(LEFT_BRACKET, 2 3)
+      COMBO(LEFT_BRACE, 2 3)
       COMBO(EXCLAMATION, 1 11)
       COMBO(HASH, 2 12)
       COMBO(DOLLAR, 3 13)
@@ -67,10 +67,10 @@
       COMBO(AMPERSAND, 13 23)
       COMBO(GRAVE, 20 21)
       COMBO(SEMICOLON, 21 22)
-      COMBO(LEFT_BRACE, 22 23) 
+      COMBO(LEFT_BRACKET, 22 23) 
 
       // Right-hand combos
-      COMBO(RIGHT_BRACKET, 6 7)
+      COMBO(RIGHT_BRACE, 6 7)
       COMBO(DOUBLE_QUOTES, 7 8)
       COMBO(EQUAL, 6 16)
       COMBO(PIPE, 7 17)
@@ -81,7 +81,7 @@
       COMBO(ASTERISK, 16 26)
       COMBO(LESS_THAN, 17 27)
       COMBO(GREATER_THAN, 18 28)
-      COMBO(RIGHT_BRACE, 26 27)
+      COMBO(RIGHT_BRACKET, 26 27)
       COMBO(UNDERSCORE, 27 28)
       COMBO(QUESTION, 28 29)
     };
