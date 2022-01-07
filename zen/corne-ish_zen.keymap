@@ -14,7 +14,7 @@
 #define U_PSTE  LG(V)
 #define U_REDO  LS(LG(Z))
 #define U_CLIP  LC(LG(C))
-#define U_SHOT  LS(LG(4))
+#define U_SHOT  LS(LG(N4))
 
 // CONFIGURATION
 #define COMBO(NAME, KEYPOS) \
