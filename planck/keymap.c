@@ -4,11 +4,11 @@
 enum layers { BASE, NAVR, NUMP };
 
 // Clipboard shortcuts
-#define U_RDO SCMD(KC_Z)
-#define U_PST LCMD(KC_V)
-#define U_CPY LCMD(KC_C)
-#define U_CUT LCMD(KC_X)
 #define U_UND LCMD(KC_Z)
+#define U_CUT LCMD(KC_X)
+#define U_CPY LCMD(KC_C)
+#define U_PST LCMD(KC_V)
+#define U_RDO SCMD(KC_Z)
 #define U_CLP LCTL(LCMD(KC_C))
 #define U_SST LSFT(LCMD(KC_4))
 
