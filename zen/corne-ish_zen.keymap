@@ -109,17 +109,17 @@
           &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)     &caps_word &kp HOME   &kp PG_DN    &kp PG_UP    &kp END
           &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &kp U_CLIP     &kp U_SHOT &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT
           &kp U_UNDO &kp U_CUT  &kp U_COPY &kp U_PSTE &kp U_REDO     &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-                                &reset     &none      &none          &kp RET    &kp BSPC   &kp DEL
+                                &none      &none      &reset         &kp RET    &kp BSPC   &kp DEL
         >;
       };
 
       num_layer {
         label = "NUMPAD";
         bindings = <
-          &bt BT_SEL 0 &kp F7 &kp F8  &kp F9    &kp F10     &kp EQUAL &kp N7 &kp N8 &kp N9 &kp PLUS
-          &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp ASTRK &kp N4 &kp N5 &kp N6 &kp MINUS
-          &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp N0    &kp N1 &kp N2 &kp N3 &kp FSLH
-                              &kp ESC &kp SPACE &kp TAB     &none     &none &none
+          &bt BT_SEL 0 &kp F7 &kp F8  &kp F9    &kp F10     &kp EQUAL  &kp N7 &kp N8 &kp N9 &kp PLUS
+          &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp ASTRK  &kp N4 &kp N5 &kp N6 &kp MINUS
+          &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp N0     &kp N1 &kp N2 &kp N3 &kp FSLH
+                              &kp ESC &kp SPACE &kp TAB     &bt BT_CLR &none  &none
         >;
       };
     };
