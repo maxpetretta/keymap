@@ -4,5 +4,5 @@ jobs:
   build:
     uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
     with:
-      build_matrix_path: zen
+      build_matrix_path: zen/build.yml
       config_path: zen
