@@ -96,8 +96,8 @@
       COMBO(RIGHT_BRACKET, 26 27)
       COMBO(UNDERSCORE, 27 28)
       COMBO(QUESTION, 28 29)
-      BT_COMBO(0 10, 4)
-      BT_COMBO(10 20, 5)
+      BT_COMBO(0 10, 3)
+      BT_COMBO(10 20, 4)
     };
 
     keymap {
