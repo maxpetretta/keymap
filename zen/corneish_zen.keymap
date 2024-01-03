@@ -29,7 +29,7 @@
       timeout-ms = <40>; \
       key-positions = <KEYPOS>; \
       bindings = <&bt BT_SEL VALUE>; \
-      layer = <NUM>; \
+      layers = <NUM>; \
   };
 
 &lt {
