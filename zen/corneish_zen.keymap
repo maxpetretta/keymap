@@ -25,7 +25,7 @@
   };
 
 #define BT_COMBO(KEYPOS, VALUE) \
-  combo_##NAME { \
+  combo_BT_##VALUE { \
       timeout-ms = <40>; \
       key-positions = <KEYPOS>; \
       bindings = <&bt BT_SEL VALUE>; \
