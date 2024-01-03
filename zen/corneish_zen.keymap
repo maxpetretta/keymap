@@ -24,6 +24,14 @@
       bindings = <&kp NAME>; \
   };
 
+#define BT_COMBO(KEYPOS, VALUE) \
+  combo_##NAME { \
+      timeout-ms = <40>; \
+      key-positions = <KEYPOS>; \
+      bindings = <&bt BT_SEL VALUE>; \
+      layer = <NUM>
+  };
+
 &lt {
   flavor = "tap-preferred";
   tapping-term-ms = <200>;
@@ -88,6 +96,8 @@
       COMBO(RIGHT_BRACKET, 26 27)
       COMBO(UNDERSCORE, 27 28)
       COMBO(QUESTION, 28 29)
+      BT_COMBO(0 10, 4)
+      BT_COMBO(10 20, 5)
     };
 
     keymap {
