@@ -1,0 +1,134 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// LAYERS
+#define COL 0
+#define NAV 1
+#define NUM 2
+
+// MACROS
+#define U_UNDO  LG(Z)
+#define U_CUT   LG(X)
+#define U_COPY  LG(C)
+#define U_PSTE  LG(V)
+#define U_REDO  LS(LG(Z))
+#define U_CLIP  LC(LG(C))
+#define U_SHOT  LS(LG(N4))
+
+// CONFIGURATION
+#define COMBO(NAME, KEYPOS) \
+  combo_##NAME { \
+      timeout-ms = <40>; \
+      key-positions = <KEYPOS>; \
+      bindings = <&kp NAME>; \
+  };
+
+&lt {
+  flavor = "tap-preferred";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <0>;
+};
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS>;
+};
+
+// KEYMAP
+/ {
+  behaviors {
+    hm: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick_tap_ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+
+    td_TAB: tap_dance_tab {
+          compatible = "zmk,behavior-tap-dance";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp TAB>, <&kp ESC>;
+      };
+  
+    td_RET: tap_dance_ret {
+          compatible = "zmk,behavior-tap-dance";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp RET>, <&kp DEL>;
+      };
+  };
+  
+  combos {
+    compatible = "zmk,combos";
+    
+    // Left-hand combos
+    COMBO(AT_SIGN, 1 2)
+    COMBO(LEFT_BRACE, 2 3)
+    COMBO(EXCLAMATION, 1 11)
+    COMBO(HASH, 2 12)
+    COMBO(DOLLAR, 3 13)
+    COMBO(GRAVE, 10 11)
+    COMBO(COLON, 11 12)
+    COMBO(LEFT_PARENTHESIS, 12 13)
+    COMBO(PERCENT, 11 21)
+    COMBO(CARET, 12 22)
+    COMBO(AMPERSAND, 13 23)
+    COMBO(TILDE, 20 21)
+    COMBO(SEMICOLON, 21 22)
+    COMBO(LEFT_BRACKET, 22 23) 
+
+    // Right-hand combos
+    COMBO(RIGHT_BRACE, 6 7)
+    COMBO(DOUBLE_QUOTES, 7 8)
+    COMBO(EQUAL, 6 16)
+    COMBO(PIPE, 7 17)
+    COMBO(BACKSLASH, 8 18)
+    COMBO(RIGHT_PARENTHESIS, 16 17)
+    COMBO(MINUS, 17 18)
+    COMBO(KP_PLUS, 18 19)
+    COMBO(ASTERISK, 16 26)
+    COMBO(LESS_THAN, 17 27)
+    COMBO(GREATER_THAN, 18 28)
+    COMBO(RIGHT_BRACKET, 26 27)
+    COMBO(UNDERSCORE, 27 28)
+    COMBO(QUESTION, 28 29)
+  };
+
+  keymap {
+    compatible = "zmk,keymap";
+
+    col_layer {
+      label = "COLMAK";
+      bindings = <
+        &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
+        &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
+        &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
+                                            &lt NAV SPACE &td_TAB     &td_RET &lt NUM BSPC
+      >;
+    };
+
+    nav_layer {
+      label = "ARROWS";
+      bindings = <
+        &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)     &caps_word &kp HOME   &kp PG_DN    &kp PG_UP    &kp END
+        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &kp U_CLIP     &kp U_SHOT &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT
+        &kp U_UNDO &kp U_CUT  &kp U_COPY &kp U_PSTE &kp U_REDO     &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+                                          &none      &none          &td_RET    &kp BSPC
+      >;
+    };
+
+    num_layer {
+      label = "NUMPAD";
+      bindings = <
+        &bt BT_SEL 0 &kp F7 &kp F8  &kp F9    &kp F10     &kp EQUAL  &kp N7 &kp N8 &kp N9 &kp PLUS
+        &bt BT_SEL 1 &kp F4 &kp F5  &kp F6    &kp F11     &kp ASTRK  &kp N4 &kp N5 &kp N6 &kp MINUS
+        &bt BT_SEL 2 &kp F1 &kp F2  &kp F3    &kp F12     &kp N0     &kp N1 &kp N2 &kp N3 &kp FSLH
+                                    &kp SPACE &td_TAB     &bt BT_CLR &none
+      >;
+    };
+  };
+};

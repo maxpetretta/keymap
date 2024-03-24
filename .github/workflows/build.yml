@@ -2,7 +2,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
-      build_matrix_path: zen/build.yml
-      config_path: zen
+      build_matrix_path: sweep/build.yml # zen/build.yml
+      config_path: sweep # zen
