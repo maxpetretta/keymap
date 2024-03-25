@@ -24,6 +24,14 @@
       bindings = <&kp NAME>; \
   };
 
+#define BT_COMBO(KEYPOS, VALUE) \
+  combo_BT_##VALUE { \
+      timeout-ms = <40>; \
+      key-positions = <KEYPOS>; \
+      bindings = <&bt BT_SEL VALUE>; \
+      layers = <NUM>; \
+  };
+
 &lt {
   flavor = "tap-preferred";
   tapping-term-ms = <200>;
@@ -88,6 +96,8 @@
       COMBO(RIGHT_BRACKET, 26 27)
       COMBO(UNDERSCORE, 27 28)
       COMBO(QUESTION, 28 29)
+      BT_COMBO(0 10, 3)
+      BT_COMBO(10 20, 4)
     };
 
     keymap {
@@ -109,7 +119,7 @@
           &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)     &caps_word &kp HOME   &kp PG_DN    &kp PG_UP    &kp END
           &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &kp U_CLIP     &kp U_SHOT &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT
           &kp U_UNDO &kp U_CUT  &kp U_COPY &kp U_PSTE &kp U_REDO     &kp C_PP   &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-                                &none      &none      &reset         &kp RET    &kp BSPC   &kp DEL
+                                &none      &none      &sys_reset         &kp RET    &kp BSPC   &kp DEL
         >;
       };
 
