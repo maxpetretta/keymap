@@ -50,14 +50,14 @@
     td_TAB: tap_dance_tab {
           compatible = "zmk,behavior-tap-dance";
           #binding-cells = <0>;
-          tapping-term-ms = <170>;
+          tapping-term-ms = <175>;
           bindings = <&kp TAB>, <&kp ESC>;
       };
   
     td_RET: tap_dance_ret {
           compatible = "zmk,behavior-tap-dance";
           #binding-cells = <0>;
-          tapping-term-ms = <160>;
+          tapping-term-ms = <165>;
           bindings = <&kp RET>, <&kp DEL>;
       };
   };
