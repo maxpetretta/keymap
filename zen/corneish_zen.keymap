@@ -104,11 +104,11 @@
       compatible = "zmk,keymap";
 
       col_layer {
-        label = "COLMAK";
+        label = "QWERTY";
         bindings = <
-          &kp Q       &kp W       &kp F       &kp P         &kp B       &kp J   &kp L        &kp U      &kp Y       &kp SQT
-          &hm LSHFT A &hm LCTRL R &hm LALT S  &hm LGUI T    &kp G       &kp M   &hm LGUI N   &hm LALT E &hm LCTRL I &hm LSHFT O
-          &kp Z       &kp X       &kp C       &kp D         &kp V       &kp K   &kp H        &kp COMMA  &kp DOT     &kp FSLH
+          &kp Q       &kp W       &kp E       &kp R         &kp T       &kp Y   &kp U        &kp I      &kp O       &kp P
+          &hm LSHFT A &hm LCTRL S &hm LALT D  &hm LGUI F    &kp G       &kp H   &hm LGUI J   &hm LALT K &hm LCTRL L &hm LSHFT SQT
+          &kp Z       &kp X       &kp C       &kp V         &kp B       &kp N   &kp M        &kp COMMA  &kp DOT     &kp FSLH
                                   &kp ESC     &lt NAV SPACE &kp TAB     &kp RET &lt NUM BSPC &kp DEL
         >;
       };
