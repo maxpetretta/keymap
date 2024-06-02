@@ -1,8 +1,8 @@
 [
   {
-    "name": "Hotdox (36 keys)",
-    "author": "Max Petretta",
-    "notes": "# 36-key Combo Layout\nA heavily modified keymap for the Alpaca Keyboard's Hotdox, implemented in QMK.\n\n## Features\nThe keymap has the following features: \n* 36 keys\n* Colemak DHm\n* Home-row mods\n* Combos for symbols\n* Only two additional layers!\n\nLayers can be toggled on/off with 3 taps of the corresponding thumb-key.\n\n## Inspiration\nIdeas for this keymap were drawn from the below resources:\n* [Colemak Mod-DH](https://colemakmods.github.io/mod-dh/)\n* [The Miryoku layout](https://github.com/manna-harbour/qmk_firmware/tree/miryoku/users/manna-harbour_miryoku)\n* [Skychil's Kombol layout](https://github.com/skychil/kombol)\n* [Jonas Hietala's T-34 layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)\n* [Precondition's home row mods writeup](https://precondition.github.io/home-row-mods)\n* [gBoard's combo library](http://combos.gboards.ca/docs/install/)\n"
+    "name": "Keymap",
+    "author": "Max Petretta, maxp.co",
+    "notes": "# Keymap\n\nA combo-infused keymap for various QMK & ZMK boards, including: OLKB Planck v6, Boardsource Equals 48, Corne-ish Zen 3x5, and Ferris Sweep\n\n![A picture of a 3x5 split keymap](./keymap.png)\n\n[Link to keyboard-layout-editor](http://www.keyboard-layout-editor.com/#/gists/39d751b9dc2e97a37b8e29fe4aa87cc5)\n\n## Features\n\nThe keymap has the following benefits:\n\n- 36 key optimized (34 on [Sweep](./sweep/cradio.keymap))\n- Colemak DHm base layer\n- Convenient combos for symbols\n- Home-row modifiers on both hands\n- Macros for quickly taking a screenshot/viewing clipboard history (Alfred)\n- Useful CAPSWORD instead of useless CAPSLOCK\n- Only three total layers!\n\n## Inspiration\n\nIdeas for this keymap were drawn from the below resources:\n\n- [Colemak Mod-DH](https://colemakmods.github.io/mod-dh/)\n- [The Miryoku layout](https://github.com/manna-harbour/qmk_firmware/tree/miryoku/users/manna-harbour_miryoku)\n- [Skychil's Kombol layout](https://github.com/skychil/kombol)\n- [Jonas Hietala's T-34 layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)\n- [Precondition's home row mods writeup](https://precondition.github.io/home-row-mods)\n- [gBoard's combo library](http://combos.gboards.ca/docs/install/)\n"
   },
   [
     {
@@ -392,7 +392,7 @@
     {
       "x": 1
     },
-    "",
+    "<i class='fa fa-rss'></i>CLR",
     {
       "c": "#ff6188"
     },
