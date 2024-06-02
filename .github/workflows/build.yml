@@ -7,8 +7,8 @@ jobs:
       build_matrix_path: sweep/build.yml
       config_path: sweep
 
-  build-zen:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      build_matrix_path: zen/build.yml
-      config_path: zen
+  # build-zen:
+  #   uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  #   with:
+  #     build_matrix_path: zen/build.yml
+  #     config_path: zen
