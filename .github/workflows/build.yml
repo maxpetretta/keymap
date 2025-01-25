@@ -1,14 +1,14 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build-sweep:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      build_matrix_path: sweep/build.yml
-      config_path: sweep
-
-  # build-zen:
+  # build-sweep:
   #   uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
   #   with:
-  #     build_matrix_path: zen/build.yml
-  #     config_path: zen
+  #     build_matrix_path: sweep/build.yml
+  #     config_path: sweep
+
+  build-zen:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: zen/build.yml
+      config_path: zen
